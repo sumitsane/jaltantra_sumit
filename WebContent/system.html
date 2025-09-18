@@ -4,6 +4,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <!-- IITB LOGO-->
+	<!-- Leaflet CSS/JS and helper libraries -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+<script src="https://unpkg.com/@mapbox/polyline@1.1.1/src/polyline.js"></script>
+
 <link rel="shortcut icon" href="iitb_logo_black_small.png">
 <!-- W2UI css file. W2UI is the javascript UI library to build the frontend. More information at http://w2ui.com/web/ -->
 <link rel="stylesheet" type="text/css" href="css/w2ui-1.4.2.css" />
@@ -21,7 +27,7 @@
 <!-- importing google charts javascript file to display charts in the map tab-->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <!-- importing google maps javascript file for the maps tab functionality-->
-<script type="text/javascript" src="//maps.google.com/maps/api/js?key=&libraries=geometry,places"></script>
+<!-- script type="text/javascript" src="//maps.google.com/maps/api/js?key=&libraries=geometry,places"></script>
 <!-- importing contextmenu javascript file for adding right click context menu to the map-->
 <script type="text/javascript" src="js/ContextMenu.js"></script>
 <!-- importing markerwithlabel javascript file for functionality of adding markers with labels to the map-->
